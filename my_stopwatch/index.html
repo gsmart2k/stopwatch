@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSMART'S STOPWATCH</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding:0px;
+            margin:0px;
+        }
+        body{
+            padding:10em 20em;
+        }
+        .counters{
+            display: block;
+            justify-content: space-between;
+            text-align: center;
+        }
+          
+        .container{
+            background:wheat;
+            display: block;
+            align-items: start;
+            justify-content: start;
+            box-shadow: 0.4px 0.4px 5px 1px black;
+            min-height:20em;
+            max-width: 40em;
+            margin:0 auto;
+        }
+        .pee{
+            margin:1em auto;
+            padding:1em;
+            color:red;
+            font-weight: bold;
+            display: inline-block;
+            justify-content: center;
+            font-size: 2em;
+            max-width: 1em;
+            min-width: 1em;
+        }
+        .buttons-div{
+            padding:2em;
+            display: block;
+            text-align: center;
+            
+
+            
+        }
+        .buttons-div button{
+            padding:1em;
+            background: orange;
+            outline: none;
+            border: none;
+            
+        }
+        .record{
+            background: azure;
+            padding:1em;
+            text-align: center;
+        }
+        
+        .litag{
+            background: wheat;
+            padding:1em;
+            max-width: 40em;
+            margin:0 auto;
+            list-style-type: none;
+            font-weight: bolder;
+            font-size: 1.2em;
+            margin: 0 auto;
+            margin-top:1em;
+            margin-bottom:1em;
+        }
+        .clear{
+            display: inline-block;
+            background: orangered;
+            padding:1em;
+           margin-left:.5em;
+           color:#fff;
+        }
+        .cont-time{
+            display: flex;
+            text-align: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="counters">
+            
+            <p class="pee minute"> 0</p>
+            <p class="pee seconds"> 0 </p>
+            <p class="pee mseconds">0 </p>
+        </div>
+        <div class="buttons-div">
+            <button id="btn" onclick="start()"> START </button>
+            <button onclick="stop()"> PAUSE </button>
+            <button onclick="reset()"> RESET </button>
+        </div>
+        <div class="cont-time">
+            <div class="record"> RECORD CURRENT TIME </div>
+            <div class="clear"> CLS </div>
+        </div>
+    </div>
+    <div class="times">
+        <ul class="ul-times">
+        </ul>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
